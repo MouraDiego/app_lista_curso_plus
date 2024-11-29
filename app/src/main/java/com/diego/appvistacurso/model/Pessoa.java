@@ -1,9 +1,5 @@
 package com.diego.appvistacurso.model;
 
-import android.util.Log;
-
-import androidx.annotation.NonNull;
-
 public class Pessoa {
     private String primeiroNome;
     private String sobreNome;
