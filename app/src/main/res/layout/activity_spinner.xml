@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".view.MainActivity"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="#979595"
+                        android:gravity="center_horizontal"
+                        android:text="@string/txt_titulo"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edit_primeiro_nome"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="16dp"
+                                android:ems="10"
+                                android:hint="@string/txt_hint_edit_primeiro_nome"
+                                android:importantForAutofill="no"
+                                android:inputType="text" />
+
+                            <EditText
+                                android:id="@+id/edit_sobrenome"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="16dp"
+                                android:ems="10"
+                                android:hint="@string/txt_hint_edit_sobrenome"
+                                android:importantForAutofill="no"
+                                android:inputType="text" />
+
+                            <EditText
+                                android:id="@+id/edit_curso_desejado"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="16dp"
+                                android:ems="10"
+                                android:hint="@string/txt_hint_edit_nome_do_curso_desejado"
+                                android:importantForAutofill="no"
+                                android:inputType="text" />
+
+                            <EditText
+                                android:id="@+id/edit_telefone_contato"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="16dp"
+                                android:ems="10"
+                                android:hint="@string/txt_hint_edit_telefone_de_contato"
+                                android:importantForAutofill="no"
+                                android:inputType="text" />
+
+                    <TextView
+                        android:id="@id/txt_list_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="#969494"
+                        android:gravity="center_horizontal"
+                        android:text="@string/txt_selecione_o_curso"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/edit_spinner"
+                        android:layout_width="346dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <Button
+                                    android:id="@+id/btn_limpar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:backgroundTint="#2196F3"
+                                    android:text="@string/txt_button_limpar"
+                                    android:textStyle="bold"
+                                    app:cornerRadius="5dp"/>
+
+                                <Button
+                                    android:id="@+id/btn_salvar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:backgroundTint="#2196F3"
+                                    android:text="@string/txt_button_salvar"
+                                    android:textStyle="bold"
+                                    app:cornerRadius="5dp"/>
+
+                            </LinearLayout>
+
+                                <Button
+                                    android:id="@+id/btn_finalizar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:backgroundTint="#2196F3"
+                                    android:text="@string/txt_button_finalizar"
+                                    android:textStyle="bold"
+                                    app:cornerRadius="5dp"/>
+
+                 </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
